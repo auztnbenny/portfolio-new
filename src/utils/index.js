@@ -127,7 +127,7 @@ export const metadata = {
     title: "Austin Benny",
     description: "This portfolio is a collection of my work that showcases my skills and creativity.",
     imageURL: "../assets/images/profile.png",
-    pageUrl: "https://www.johnclaytonblanc.com"
+    pageUrl: "https://austinbennyvaliplackal.vercel.app/"
 };
 
 export const galleryItems = [

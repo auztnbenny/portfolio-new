@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { fixedNavItems } from '../../utils';
 import { motion, useAnimation } from "framer-motion";
 import { Link, animateScroll } from 'react-scroll';
+import { useNavigate } from 'react-router-dom'; 
 
 const FixedNavBar = () => {
     const [state, setState] = useState(false)
     const controls = useAnimation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         controls.start({ y: 0, opacity: 1, transition: { duration: 1 } });
@@ -19,7 +21,7 @@ const FixedNavBar = () => {
     const Brand = () => (
         <div className="flex items-center justify-between py-5 md:block">
             <Link to={'/'} className="flex gap-1 group">
-                <span className="font-bold text-[1.3rem] text-white group-hover:text-secondary transition-colors duration-500">JC</span>
+                <span className="font-bold text-[1.3rem] text-white group-hover:text-secondary transition-colors duration-500">AB</span>
                 <span className="w-2 h-2 rounded-full bg-primary-red group-hover:bg-white bg-secondary transition-colors duration-500"></span>
             </Link>
 
@@ -59,9 +61,7 @@ const FixedNavBar = () => {
                                     return (
                                         <li key={idx} className="text-gray-300 transition-li hover:transform-li text-base">
                                             <Link
-                                                to={
-                                                    navItem.name.toLocaleLowerCase()
-                                                }
+                                                to={navItem.name.toLowerCase()}
                                                 smooth={true}
                                                 duration={500}
                                                 spy={true}
@@ -74,6 +74,14 @@ const FixedNavBar = () => {
                                     )
                                 })
                             }
+                            <li className="text-gray-300 transition-li hover:transform-li text-base">
+                                <button
+                                    onClick={() => navigate('/login')}
+                                    className="block cursor-pointer"
+                                >
+                                    Login
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -82,4 +90,4 @@ const FixedNavBar = () => {
     )
 }
 
-export default FixedNavBar
+export default FixedNavBar;

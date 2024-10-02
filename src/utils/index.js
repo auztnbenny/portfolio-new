@@ -63,24 +63,30 @@ techStack: ['Flask', 'ReactJS'],
     
 ];
 
-export const skillsWork = [
-    'NodeJS',
-    'Python',
-    'PostgreSQL',
-    'MySQL',
-    'Redis',
-    'Docker',
-    'Kubernetes',
-    'Jenkis',
-    'Microsoft Azure',
+export const skillsWork  = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Flutter',
+    'Python ',
+    'Dart',
+    'Flask',
+    'LangChain',
 ];
 
-export const certificates = [
-    'CompTIA  A+',
-    'Jenkins',
-    'Traefik',
+export const certificates  = [
+    'Firebase',
+    'Docker',
+    'Git',
+    'GitHub',
+    'Hugging Face',
+    'Replicate',
+    'Figma',
+    'VSCode',
     'GitHub Actions',
 ];
+
 
 export const articles = [
     {
@@ -113,7 +119,7 @@ export const articles = [
 
 
 export const metadata = {
-    title: "John Clayton Blanc",
+    title: "Austin Benny",
     description: "This portfolio is a collection of my work that showcases my skills and creativity.",
     imageURL: "../assets/images/profile.webp",
     pageUrl: "https://www.johnclaytonblanc.com"

@@ -42,7 +42,7 @@ const About = () => {
                     initial="hidden"
                     animate={control}
                     className="flex-1 text-base">
-                    <p className="pb-3 text-justify">
+                    <p className="pb-3 text-justify pt-4 md:pt-7">
                     Hey there! I'm Austin Benny, a self-taught computer science student passionate about mobile and web development. I specialize in Flutter and React, with hands-on experience in technologies like Firebase and Flask. Currently, I'm focused on generative AI projects and staying updated with the latest tech trends.If you have an opening that might be a good fit, let's connect and explore the possibilities!
                     </p>
 
@@ -85,12 +85,12 @@ const About = () => {
 
                 <div className="flex-1 pt-4 md:pt-0">
                     <StackSkills
-                        title={"Programming & Tools"}
+                        title={"Programming Skills"}
                         list={skillsWork}
                         icon={<FaCode color="#6366f1" />} />
 
                     <StackSkills
-                        title={"Certificates"}
+                        title={"Tools & Technologies"}
                         list={certificates}
                         icon={< TbCertificate color="#6366f1" />} />
                 </div>

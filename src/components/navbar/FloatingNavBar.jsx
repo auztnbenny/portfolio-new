@@ -61,6 +61,7 @@ export const FloatingNavBar = ({ className, visible }) => {
                     <span>Contact</span>
                     <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-secondary to-transparent  h-px" />
                 </Link>
+    
             </motion.div>
         </AnimatePresence >
     );

@@ -10,8 +10,8 @@ const resend = new Resend(process.env.APIKEY);
 app.use(
     cors({
         origin: [
-            "https://www.johnclaytonblanc.com",
-            "https://johnclayton.vercel.app",
+            "https://austinbennyvaliplackal.vercel.app/",
+            "https://austinbennyvaliplackal.vercel.app/",
         ],
     })
 );

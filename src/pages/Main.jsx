@@ -2,6 +2,7 @@ import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
+import Gallery from "../components/sections/Gallery";
 import Blog from "../components/sections/Blog";
 import Footer from "../components/sections/Footer";
 import { Analytics } from "@vercel/analytics/react";
@@ -26,7 +27,7 @@ const Main = () => {
             <Hero />
             <About />
             <Projects />
-            <Blog />
+            <Gallery />
             <Contact />
             <Footer />
             <Analytics />

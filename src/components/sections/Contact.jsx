@@ -170,19 +170,18 @@ const Contact = () => {
                 </motion.div>
             </div>
             <div className="mt-12">
-                <h3 className="text-2xl font-semibold text-primary-text mb-4">Find Me Here</h3>
-                <div className="w-full h-96">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.9547402534536!2d75.28321807482979!3d12.31883328793982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba461e7ebae811d%3A0xd9b2b6d37708c4ed!2sVALIPLACKAL%20HOME!5e0!3m2!1sen!2sin!4v1727860285275!5m2!1sen!2sin" 
-                        width="100%" 
-                        height="100%" 
-                        style={{border:0}} 
-                        allowFullScreen="" 
-                        loading="lazy" 
-                        referrerPolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
+    <h3 className="text-2xl font-semibold text-primary-text mb-4">Find Me Here</h3>
+    <div className="w-full h-0 pb-[40%] relative">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.9547402534536!2d75.28321807482979!3d12.31883328793982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba461e7ebae811d%3A0xd9b2b6d37708c4ed!2sVALIPLACKAL%20HOME!5e0!3m2!1sen!2sin!4v1727860285275!5m2!1sen!2sin" 
+            className="absolute top-0 left-0 w-full h-full"
+            style={{border:0}} 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
         </section>
     )
 }

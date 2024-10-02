@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { fixedNavItems } from '../../utils';
 import { motion, useAnimation } from "framer-motion";
 import { Link, animateScroll } from 'react-scroll';
-import { useNavigate } from 'react-router-dom'; 
+
 
 const FixedNavBar = () => {
     const [state, setState] = useState(false)
     const controls = useAnimation();
-    const navigate = useNavigate();
+    
 
     useEffect(() => {
         controls.start({ y: 0, opacity: 1, transition: { duration: 1 } });
@@ -61,7 +61,9 @@ const FixedNavBar = () => {
                                     return (
                                         <li key={idx} className="text-gray-300 transition-li hover:transform-li text-base">
                                             <Link
-                                                to={navItem.name.toLowerCase()}
+                                                to={
+                                                    navItem.name.toLocaleLowerCase()
+                                                }
                                                 smooth={true}
                                                 duration={500}
                                                 spy={true}
@@ -70,18 +72,14 @@ const FixedNavBar = () => {
                                                 className="block cursor-pointer">
                                                 {navItem.name}
                                             </Link>
+                                            
                                         </li>
                                     )
                                 })
                             }
                             <li className="text-gray-300 transition-li hover:transform-li text-base">
-                                <button
-                                    onClick={() => navigate('/login')}
-                                    className="block cursor-pointer"
-                                >
-                                    Login
-                                </button>
-                            </li>
+                <a href="/login" className="block cursor-pointer">Login</a>
+            </li>
                         </ul>
                     </div>
                 </div>
@@ -90,4 +88,4 @@ const FixedNavBar = () => {
     )
 }
 
-export default FixedNavBar;
+export default FixedNavBar

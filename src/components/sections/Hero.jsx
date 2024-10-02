@@ -1,6 +1,5 @@
 import { CustomButton } from "../buttons/CustomButton";
 import NavBar from "../navbar/NavBar";
-import profile from "../../assets/images/profile.webp";
 import { useRef } from "react";
 import hover3d from "../../utils/hover";
 import { motion } from 'framer-motion';
@@ -19,12 +18,6 @@ const Hero = () => {
         z: 30,
     });
 
-    const imageHover = hover3d(hero, {
-        x: 20,
-        y: -5,
-        z: 11,
-    });
-
     const scrollToContact = () => {
         animateScroll.scrollToBottom();
     };
@@ -41,43 +34,15 @@ const Hero = () => {
 
                     {/* Info Div */}
                     <div className="space-y-2 max-w-4xl mx-auto">
-                        <div className="flex justify-between">
-                            <div>
-                                <AnimatedTitle
-                                    text={headlines[0]}
-                                    className="text-4xl font-extrabold mx-auto md:text-5xl text-primary-text"
-                                    color={true} />
+                        <div>
+                            <AnimatedTitle
+                                text={headlines[0]}
+                                className="text-4xl font-extrabold mx-auto md:text-5xl text-primary-text"
+                                color={true} />
 
-                                <AnimatedSubtitle
-                                    text={headlines[1]}
-                                    className="text-secondary-text text-2xl md:text-3xl mx-auto font-bold break-words" />
-                            </div>
-
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    scale: 0
-                                }}
-                                animate={{
-                                    opacity: 1,
-                                    scale: 1,
-                                    transition: {
-                                        duration: 1
-                                    }
-                                }}
-                                className="hidden md:block"
-                                style={{
-                                    transform: hoverHero.transform,
-                                }}>
-                                <img
-                                    src={profile}
-                                    alt="Profile"
-                                    className='rounded-full border-2 border-secondary'
-                                    style={{
-                                        transform: imageHover.transform,
-                                    }}
-                                />
-                            </motion.div>
+                            <AnimatedSubtitle
+                                text={headlines[1]}
+                                className="text-secondary-text text-2xl md:text-3xl mx-auto font-bold break-words" />
                         </div>
 
                         <motion.p

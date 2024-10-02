@@ -8,6 +8,11 @@ import a1 from "../assets/images/a1.webp";
 import a2 from "../assets/images/a2.webp";
 import a4 from "../assets/images/a4.webp";
 import a5 from "../assets/images/a5.webp";
+import img1 from "../assets/images/img1.jpg";
+import img2 from "../assets/images/img2.jpg";
+import img3 from "../assets/images/img3.jpg";
+import img4 from "../assets/images/img4.jpg";
+// Add more imports if you have more images
 
 
 export const headlines = [
@@ -20,7 +25,7 @@ export const fixedNavItems = [
     { name: "Home" },
     { name: "About" },
     { name: "Projects" },
-    { name: "Blog" },
+    { name: "Gallery" },
     { name: "Contact" }
 ]
 
@@ -121,6 +126,27 @@ export const articles = [
 export const metadata = {
     title: "Austin Benny",
     description: "This portfolio is a collection of my work that showcases my skills and creativity.",
-    imageURL: "../assets/images/profile.webp",
+    imageURL: "../assets/images/profile.png",
     pageUrl: "https://www.johnclaytonblanc.com"
 };
+
+export const galleryItems = [
+    {
+        
+        image: img1,
+    },
+    {
+        image: img2,
+    },
+    {
+       
+        image: img3,
+    },
+    {
+       
+        image: img4,
+    },
+    
+    // Add more gallery items as needed
+];
+// ... other existing exports
